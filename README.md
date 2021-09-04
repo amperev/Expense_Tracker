@@ -1,16 +1,27 @@
-# expense_tracker
+# Expense Tracker  
 
-A new Flutter project.
+## 📸 ScreenShots
 
-## Getting Started
+|             Light Theme              |              Dark Theme              |
+| :----------------------------------: | :----------------------------------: |
+| <img src="Screenshots/1.png" width="250">   | <img src="Screenshots/4.png" width="250">|
+| <img src="Screenshots/7.png" width="250">   | <img src="Screenshots/5.png" width="250">|
+| <img src="Screenshots/3.png" width="250">   | <img src="Screenshots/6.png" width="250">                                |
 
-This project is a starting point for a Flutter application.
+### Show some :heart: and star the repo to support the project
 
-A few resources to get you started if this is your first Flutter project:
+## Overview
+Using this app, users can keep track of their day-to-day expenses. All data are stored and saved in a google
+spreadsheet where each new transaction is either stored as income or expense.
+  
+## Technology Stack
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Flutter
+- Google Sheet
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Getting Started 🚀
+- Fork The Repo
+- Clone the repo `git clone https://github.com/Sahil-kachhap/GDG-Devfest-India`
+- Install the dependicies `flutter pub get`
+- Run it `flutter run`
+
