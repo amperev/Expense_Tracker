@@ -22,7 +22,7 @@ spreadsheet where each new transaction is either stored as income or expense.
 
 ## Getting Started 🚀
 - Fork The Repo
-- Clone the repo `git clone https://github.com/Sahil-kachhap/GDG-Devfest-India`
+- Clone the repo `git clone https://github.com/Sahil-kachhap/Expense_Tracker`
 - Install the dependicies `flutter pub get`
 - Run it `flutter run`
 
