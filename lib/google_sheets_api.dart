@@ -4,14 +4,21 @@ class GoogleSheetsApi {
   // create credentials
   static const _credentials = r'''
   {
-   
-   PUT YOUR CREDENTIALS HERE
-  
-  }
+  "type": "service_account",
+  "project_id": "expense-tracker-324813",
+  "private_key_id": "988ad0dac9fd531834d8e72dc32998f961d2096a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqAMAHx/DAA1zN\nlhm2Hzzq1UuUrgUtK8iu07waADuMtV0hYjfUqMiMlP6Rk5TYVCzdhxtO7SVzshzH\npUmpnRmmfgoltuC8kQKT7nSsqzNpgti29fEuz3STsFCZiQ+7sGJTrZ6eQ2rJpjxH\nN4iWrtoKQ15bRk31D4GEww7sWABGeJp/l7TRzC2qYNWWPb143hu9RcmHWolfn68e\nXrQMPajFJIwakxVm6PuGqgMBhQ1kvV/cZA25jczIwGpgGZh+xWI3Hwrr38YYRi39\nCDjkDucgHQFoHicGFVLIytbsFQmscRWbXQTXNTaUNuPRuOwWr/NCG7bGgs/9dyV0\n8gTGcpl7AgMBAAECggEAD1Kw/FXCHMFQ1WD9oUpDtq3FOboAhaR7WrK2ZihcnB97\nk11weqHZ+oqyPvnf6F3Li3SFlBtQ85KVM7OLJhdSCNoC3SJhZrp+7BZWr636UAmd\nfsqm06YBGnZbO9nvfQBDF8q/tmeNa26PfIkELgMsBdFlSSUKZ5fFs1GhLNFdX2L4\n8VD/tlW7o0czpaH/eMrdbBbUf4KnOqcOtSHrE7l6ZzzzFd095ejH+0uR1mftAlmJ\ntNumsYjZjuj8P327DXRRaAUCMpcIBiaRhJcAUAbIaZtA3yw8Of09NT6FMddTVfQt\n+hI7Pv3j0jIr5dDwiJDBB1YHIZzA6ZpsTPWJocgmFQKBgQDuuZgQkVQRErcrkBUP\nvXOXvZwwdrfGiY9KJb2VaV8khbCtPY4Z591zJiIKTMCCpBbH0fJqHoW7CEoVi1sS\n6jN9FL4dUKLqKvlQtD2aHU3lA35LQE8HmZnR6cyofZ58oophnMU+/NCqqm5TX0s3\n8xo0C01bXqi4KtkNFoQr/mHdnwKBgQC2ThKhhST6a5G8gHJ8oYQRHwPZY6xCTPuz\n0N2t6KG+MsPws1cm+8EjwJmRzCrXBgljbLj70e8kTnBceyzCCXzRO2R6DQYdRJh9\ncMdAtfO98kjs8R3atfeggQOP7hDP+YBk/xLUVwI5zUsohPm2afzQFxfsluicL8DG\nGgpjIKX+pQKBgQCp1vzq/JoUs34BzjZNxnmQwWN3z16cL430MLmarSb1cu/psNuC\nbsXMgJrDPSvRRjC25RVUjnaSRCmA/m5DHMCZAsLnVFEzzHMoCbOyC5s5jayymQQg\n4hTflTj3vrec8H8HR2PFllRWt35abnezTI+d61ST5tqefE2D1DsgmZDC/QKBgQCD\nK+vF4ho4QPvsiPNXb5OqCgnn+gqw7dlRiaBniHIQe1B2uWOk/hH7GpKk0CWm74YD\nzu/O6T/LfNDmCg6rUs5HcheaphJXLssVvvbvPbwyWMlWCyty+elByHJ6tk3MhvZ2\nNP4kYLKOSoOglQVj1iD8zRD+v5qA/u8S2xvMNWqarQKBgEmGSOJ+cuCRpVxRmoUQ\nlDMLpjhTavYAeTqg+4bfiGqWL6wBFukz+YXB8W7hEhQRxUZ9G1ZCEZHVmmXFuO2l\nQp+Pm32r6b/ICGYIgEFrrhkkOl5puBQ8lgOc3CkQEBdE2e48341GLRVwvb/ajSNQ\nLsK2TTHfuF5v4miHKq3aMA4f\n-----END PRIVATE KEY-----\n",
+  "client_email": "expense-tracker-app@expense-tracker-324813.iam.gserviceaccount.com",
+  "client_id": "114869304597209631635",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/expense-tracker-app%40expense-tracker-324813.iam.gserviceaccount.com"
+}
   ''';
 
   // set up & connect to the spreadsheet
-  static final _spreadsheetId = 'PUT YOUR SPREADSHEET ID HERE';
+  static final _spreadsheetId = '1oRDZA9jqVc3cQUhZZ0sSVq6WjZTt83g27oAnoJnVoVA';
   static final _gsheets = GSheets(_credentials);
   static Worksheet _worksheet;
 

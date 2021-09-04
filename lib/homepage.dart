@@ -7,7 +7,7 @@ import 'top_card.dart';
 import 'transaction.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.grey[600],
                     child: Text('Enter', style: TextStyle(color: Colors.white)),
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {
+                      if (_formKey.currentState.validate()) {
                         _enterTransaction();
                         Navigator.of(context).pop();
                       }

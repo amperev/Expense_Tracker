@@ -6,9 +6,9 @@ class MyTransaction extends StatelessWidget {
   final String expenseOrIncome;
 
   MyTransaction({
-    required this.transactionName,
-    required this.money,
-    required this.expenseOrIncome,
+    @required this.transactionName,
+    @required this.money,
+    @required this.expenseOrIncome,
   });
 
   @override
