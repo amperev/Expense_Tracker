@@ -1,6 +1,6 @@
 # Expense Tracker  
 <p>
-<img src="ota-clip.gif" width="250">
+<img width="800px" src="Screenshots/ota-clip.gif" width="250">
 </p>
 
 ## 📸 ScreenShots
