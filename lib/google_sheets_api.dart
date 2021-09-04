@@ -13,7 +13,7 @@ class GoogleSheetsApi {
   // set up & connect to the spreadsheet
   static final _spreadsheetId = 'PUT YOUR SPREADSHEET ID HERE';
   static final _gsheets = GSheets(_credentials);
-  static Worksheet? _worksheet;
+  static Worksheet _worksheet;
 
   // some variables to keep track of..
   static int numberOfTransactions = 0;
@@ -29,7 +29,7 @@ class GoogleSheetsApi {
 
   // count the number of notes
   static Future countRows() async {
-    while ((await _worksheet!.values
+    while ((await _worksheet.values
             .value(column: 1, row: numberOfTransactions + 1)) !=
         '') {
       numberOfTransactions++;
@@ -44,11 +44,11 @@ class GoogleSheetsApi {
 
     for (int i = 1; i < numberOfTransactions; i++) {
       final String transactionName =
-          await _worksheet!.values.value(column: 1, row: i + 1);
+          await _worksheet.values.value(column: 1, row: i + 1);
       final String transactionAmount =
-          await _worksheet!.values.value(column: 2, row: i + 1);
+          await _worksheet.values.value(column: 2, row: i + 1);
       final String transactionType =
-          await _worksheet!.values.value(column: 3, row: i + 1);
+          await _worksheet.values.value(column: 3, row: i + 1);
 
       if (currentTransactions.length < numberOfTransactions) {
         currentTransactions.add([
@@ -72,7 +72,7 @@ class GoogleSheetsApi {
       amount,
       _isIncome == true ? 'income' : 'expense',
     ]);
-    await _worksheet!.values.appendRow([
+    await _worksheet.values.appendRow([
       name,
       amount,
       _isIncome == true ? 'income' : 'expense',
