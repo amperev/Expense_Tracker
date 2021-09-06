@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Text('Expense'),
+                          Text('Exp'),
                           Switch(
                             value: _isIncome,
                             onChanged: (newValue) {
